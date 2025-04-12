@@ -1,0 +1,119 @@
+.header {
+  background-color: $extra;
+}
+
+.header__container {
+  padding-top: 15px;
+  padding-bottom: 13px;
+  display: flex;
+  justify-content: space-between;
+ // max-width: 290px;
+  align-items: flex-start;
+ 
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    //max-width: 678px; 
+    align-items: center;
+  }
+  @media (min-width: $desktop-width) {
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+}
+
+.header__logo {
+  margin-bottom: 16px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 32px;
+    margin-right: 134px;
+  }
+}
+
+.header__logo:hover,
+.header__logo:active,
+.header__logo:focus {
+  opacity: 0.5;
+}
+
+.header__link {
+  color: $white-color;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: -4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+
+.header__link:hover {
+  opacity: 0.5;
+}
+
+.header__link:focus-visible {
+  outline: none;
+}
+
+.header__link:focus {
+  color: $primary;
+}
+
+.header__link:active {
+  color: $dark-blue;
+}
+
+.header__link:disabled {
+  color: $grey;
+}
+
+.header__toggle-button {
+  width: 26px;
+  height: 26px;
+  background-image: url("/__spritemap#sprite-menu-view");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.header__toggle-button--open {
+  background-image: url("/__spritemap#sprite-menu-view");
+}
+
+.header__toggle-button--close {
+  background-image: url("/__spritemap#sprite-cross-view");
+}
+
+.header__inner {
+  display: flex;
+  flex-direction: column;
+  //width: 142px;
+  align-items: flex-end;
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 410px;
+    align-items: center;
+  }
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}

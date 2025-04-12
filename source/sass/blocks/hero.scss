@@ -1,0 +1,308 @@
+.swiper.hero__swiper {
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0 auto;
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+    
+  }
+  @media (min-width: $desktop-width) {
+    min-width: 1440px;
+  }
+}
+
+.hero__swiper-wrapper {
+  display: flex;
+
+}
+
+.hero__swiper-slide {
+  min-height: 568px;
+  width: 100%;
+  @media (min-width: $tablet-width) {
+    min-height: 1034px;
+  }
+  @media (min-width: $desktop-width) {
+    min-height: 800px;
+  }
+}
+
+.hero__container {
+  min-height: 512px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  @media (min-width: $tablet-width) {
+    min-height: 975px;
+  }
+  @media (min-width: $desktop-width) {
+    min-height: 720px;
+    align-items: flex-start;
+    text-align: start;
+    justify-content: flex-end;
+  }
+  
+}
+
+.hero__swiper-slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
+}
+
+.hero__swiper-slide-1 {
+  background-image: url(../../img/hero-mobile-1.jpg);
+  @media (min-width: $tablet-width) {
+    background-image: url(../../img/hero-tablet-1.jpg);
+    
+  }
+  @media (min-width: $desktop-width) {
+    background-image: url(../../img/hero-desktop-1.jpg);
+    
+  }
+}
+
+.hero__swiper-slide-2 {
+  background-image: url(../../img/hero-mobile-2.jpg);
+  @media (min-width: $tablet-width) {
+    background-image: url(../../img/hero-tablet-2.jpg);
+    position: relative;
+  }
+  @media (min-width: $desktop-width) {
+    background-image: url(../../img/hero-desktop-2.jpg);
+  }
+}
+
+.hero__swiper-slide-2::after {
+  @media (min-width: $tablet-width) {
+    content: url('../../img/photo-cards-tablet.png');
+    width: 100%;
+    height: 365px;
+    display: block;
+    position: absolute;
+    bottom: 197px;
+    left: 0;
+    text-align: center;
+    @media (min-width: $desktop-width) {
+      content: url('../../img/photo-cards-desktop.png');
+      left: 31%;
+    }
+  }
+}
+
+.hero__swiper-slide-2 .hero__container {
+  @media (min-width: $tablet-width) {
+ justify-content: flex-start;
+  }
+  @media (min-width: $desktop-width) {
+    justify-content: flex-end;
+  }
+}
+
+.hero__swiper-slide-3 {
+  background-image: url(../../img/hero-mobile-3.png);
+  @media (min-width: $tablet-width) {
+    background-image: url(../../img/hero-tablet-3.jpg);
+  }
+  @media (min-width: $desktop-width) {
+    background-image: url(../../img/hero-desktop-3.jpg);
+  }
+}
+
+.hero__swiper-link {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: $white-color;
+  display: block;
+  background-color: $extra;
+  text-decoration: none;
+  width: 180px;
+  min-height: 56px;
+  padding: 20px;
+  text-align: center;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 134px;
+  }
+}
+.hero__swiper-link:hover {
+  background-color: $white-color;
+  color: $dark-blue;
+  outline: 1px solid $dark-blue;
+
+}
+
+.hero__swiper-link:focus {
+  background-color: $white-color;
+  color: $dark-blue;
+}
+
+.hero__swiper-link:active {
+  background-color: $dark-blue;
+  color: $white-color;
+}
+
+.hero__swiper-link:disabled {
+  background-color: $grey;
+  color: $white-color;
+}
+
+
+.hero__swiper-slide h2 {
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 26px;
+  color: $white-color;
+  margin-bottom: 15px;
+  margin-top: 40px;
+  
+  @media (min-width: $tablet-width) {
+    font-size: 56px;
+    line-height: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 77px;
+    line-height: 77px;
+    width: 780px;
+    margin-bottom: 25px;
+  }
+}
+
+.hero__swiper-slide-2 h2 {
+  @media (min-width: $tablet-width) {
+    margin-top: 137px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 806px;
+  }
+}
+
+
+.hero__swiper-slide-3 h2 {
+  @media (min-width: $tablet-width) {
+    margin-top: -3px;
+    margin-bottom: 13px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 944px;
+    margin-bottom: 22px;
+  }
+}
+
+.hero__swiper-slide p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: $white-color;
+  margin-bottom: 60px;
+  margin-top: 0;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+    font-size: 17px;
+    line-height: 24px;
+    width: 500px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 420px;
+  }
+}
+
+.hero__swiper-slide-2 p {
+  width: 284px;
+  @media (min-width: $tablet-width) {
+    width: 500px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 464px;
+  }
+}
+
+.hero__swiper-slide-3 p {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 38px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 464px;
+  }
+}
+
+.hero__swiper-about-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.hero__swiper-about {
+ display: none;
+ @media (min-width: $desktop-width) {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  height: 44px;
+  outline: 1px solid $white-color;
+  padding: 14px 20px 14px 40px;
+  color: $white-color; 
+  background-position: 20px;
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+ }
+}
+
+.hero__swiper-about--moon {
+  background-image: url('/__spritemap#sprite-moon-view');
+}
+
+.hero__swiper-about--level {
+  background-image: url('/__spritemap#sprite-level-view');
+}
+
+.hero__swiper-pagination {
+  display: flex;
+  justify-content: center;
+  @media (min-width: $desktop-width) {
+    justify-content: flex-end;
+  }
+
+}
+.hero__pagination-control {
+  display: block;
+  width: 16px;
+  height: 16px;
+  opacity: 1;
+  border: 1px solid $white-color;
+  background-color: transparent;
+  margin-right: 20px;
+  border-radius: 50%;
+  @media (min-width: $tablet-width) {
+    width: 20px;
+    height: 20px; 
+  }
+}
+
+.hero__swiper-pagination.swiper-pagination {
+  margin-bottom: 32px;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 84px;
+  }
+}
+
+.swiper-pagination__wrapper {
+  @media (min-width: $desktop-width) {
+  width: 1200px;
+  bottom: 0;
+  position: absolute;
+  right: 121px;
+  }
+}
+
+.hero__pagination-control:last-child {
+margin-right: 0;
+}
+
+.hero__pagination-control--active {
+  background-color: $white-color;
+}
