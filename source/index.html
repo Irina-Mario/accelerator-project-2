@@ -67,7 +67,7 @@
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero" data-test="hero">
       <h1 class="visually-hidden">Самые интересные походы и туры</h1>
       <div class="swiper hero__swiper">
         <div class="hero__swiper-wrapper swiper-wrapper">
@@ -116,6 +116,152 @@
             <span class="swiper__pagination-bullet  hero__pagination-control" tabindex="0" role="button"
               aria-label="Перейти к слайду 3"></span>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tours" data-test="tours">
+      <div class="container">
+        <div class="tours__container">
+          <p class="tours__title-shedow" aria-hidden="true">Ближайшие туры</p>
+          <h2 class="section-title tours__title">Ближайшие туры</h2>
+          <div class="swiper tours__swiper">
+            <div class="swipper__navigation-button tours__button-wrapper">
+              <div class="tours__navigation-button tours__navigation-button--prev tours__button-desabled" role="button"
+                aria-disabled="true" aria-label="К предыдущему слайду"></div>
+              <div class="ttours__navigation-button tours__navigation-button--next" role="button" aria-disabled="false"
+                aria-label="К следующему слайду"></div>
+            </div>
+            <div class="swiper-wrapper tours__swiper-wrapper">
+              <div class="swiper-slide tours__swiper-slide tours-card">
+                <picture>
+                  <!--<source srcset="img/about-desk@1x.webp 1x, img/about-desk@2x.webp 2x" media="(min-width: 1336px)"
+                    width="660" height="400" type="image/webp">
+                  <source srcset="img/about-tablet@1x.webp 1x, img/about-tablet@2x.webp 2x" media="(min-width: 768px)"
+                    width="678" height="345" type="image/webp">
+                  <source srcset="img/about-mobile@1x.webp 1x, img/about-mobile@2x.webp 2x" width="320" height="280"
+                    type="image/webp"> -->
+                  <source srcset="img/tours-card-desktop-1.jpg 1x, img/tours-card-desktop-1@2x.jpg 2x" media="(min-width: 1440px)" width="380"
+                    height="416" type="image/jpg">
+                  <source srcset="img/tours-card-tablet-1.jpg 1x, img/tours-card-tablet-1@2x.jpg 2x" media="(min-width: 768px)"
+                    width="330" height="416" type="image/jpg">
+                  <img class="tours-card__image" src="img/tours-card-mobile-1.jpg" srcset="img/tours-card-mobile-1@2x.jpg 2x"
+                    width="290" height="416" alt="Фото Эльбруса">
+                </picture>
+
+                <div class="tours-card__wrapper">
+                  <span class="tours-card__info tours-card__info--location">Кавказ</span>
+                  <span class="tours-card__info tours-card__info--day">4 дня</span>
+                  <span class="tours-card__info tours-card__info--nigth">3 ночи</span>
+                  <h3 class="tours-card__title">Путешествие вокруг Эльбруса</h3>
+                  <div class="tours-card__details tours-card__details--level">Сложность:
+                    <div class="tours-card__star-wrapper">
+                      <svg class="tours-card__star-icon" width="16" height="16" viewBox="0 0 16 16">
+                        <use href="/__spritemap#sprite-star"></use>
+                      </svg>
+                      <svg class="tours-card__star-icon" width="16" height="16" viewBox="0 0 16 16">
+                        <use href="/__spritemap#sprite-star"></use>
+                      </svg>
+                      <svg class="tours-card__star-icon" width="16" height="16" viewBox="0 0 16 16">
+                        <use href="/__spritemap#sprite-star"></use>
+                      </svg>
+                      <svg class="tours-card__star-icon" width="16" height="16" viewBox="0 0 16 16">
+                        <use href="/__spritemap#sprite-star"></use>
+                      </svg>
+                      <svg class="tours-card__star-icon" width="16" height="16" viewBox="0 0 16 16">
+                        <use href="/__spritemap#sprite-star-empty"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <span class="tours-card__details tours-card__details--data">Даты набора:
+                    <span>12.06–19.06</span></span>
+                  <span class="tours-card__details tours-card__details--count">Группа: <span>до 15 чел.</span></span>
+                </div>
+              </div>
+
+              <div class="swiper-slide tours__swiper-slide tours-card">
+                <picture>
+                  <!--<source srcset="img/about-desk@1x.webp 1x, img/about-desk@2x.webp 2x" media="(min-width: 1336px)"
+                    width="660" height="400" type="image/webp">
+                  <source srcset="img/about-tablet@1x.webp 1x, img/about-tablet@2x.webp 2x" media="(min-width: 768px)"
+                    width="678" height="345" type="image/webp">
+                  <source srcset="img/about-mobile@1x.webp 1x, img/about-mobile@2x.webp 2x" width="320" height="280"
+                    type="image/webp"> -->
+                  <source srcset="img/tours-card-desktop-2.jpg 1x, img/tours-card-desktop-2@2x.jpg 2x" media="(min-width: 1440px)" width="380"
+                    height="416" type="image/jpg">
+                  <source srcset="img/tours-card-tablet-2.jpg 1x, img/tours-card-tablet-2@2x.jpg 2x" media="(min-width: 768px)"
+                    width="330" height="416" type="image/jpg">
+                  <img class="tours-card__image" src="img/tours-card-mobile-2.jpg" srcset="img/tours-card-mobile-2@2x.jpg 2x"
+                    width="290" height="416" alt="Фото горы Белухи">
+                </picture>
+                <div class="tours-card__wrapper">
+                  <span class="tours-card__info tours-card__info--location">Алтай</span>
+                  <span class="tours-card__info tours-card__info--day">14 дней</span>
+                  <span class="tours-card__info tours-card__info--nigth">13 ночей</span>
+                  <h3 class="tours-card__title">Путь к подножию Белухи</h3>
+                  <span class="tours-card__details tours-card__details--level">Сложность</span>
+                  <span class="tours-card__details tours-card__details--data">Даты набора:
+                    <span>14.06–23.06</span></span>
+                  <span class="tours-card__details tours-card__details--count">Группа: <span>до 25 чел.</span></span>
+                </div>
+              </div>
+
+              <div class="swiper-slide tours__swiper-slide tours-card">
+                <picture>
+                  <!--<source srcset="img/about-desk@1x.webp 1x, img/about-desk@2x.webp 2x" media="(min-width: 1336px)"
+                    width="660" height="400" type="image/webp">
+                  <source srcset="img/about-tablet@1x.webp 1x, img/about-tablet@2x.webp 2x" media="(min-width: 768px)"
+                    width="678" height="345" type="image/webp">
+                  <source srcset="img/about-mobile@1x.webp 1x, img/about-mobile@2x.webp 2x" width="320" height="280"
+                    type="image/webp"> -->
+                  <source srcset="img/tours-card-desktop-3.jpg 1x, img/tours-card-desktop-3@2x.jpg 2x" media="(min-width: 1440px)" width="380"
+                    height="416" type="image/jpg">
+                  <source srcset="img/tours-card-tablet-3.jpg 1x, img/tours-card-tablet-3@2x.jpg 2x" media="(min-width: 768px)"
+                    width="330" height="416" type="image/jpg">
+                  <img class="tours-card__image" src="img/tours-card-mobile-3.jpg" srcset="img/tours-card-mobile-3@2x.jpg 2x"
+                    width="290" height="416" alt="Фото Адыгеи">
+                </picture>
+                <div class="tours-card__wrapper">
+                  <span class="tours-card__info tours-card__info--location">Адыгея</span>
+                  <span class="tours-card__info tours-card__info--day">7 дней</span>
+                  <span class="tours-card__info tours-card__info--nigth">6 ночей</span>
+                  <h3 class="tours-card__title">Через Фишт к Чёрному морю и обратно</h3>
+                  <span class="tours-card__details tours-card__details--level">Сложность</span>
+                  <span class="tours-card__details tours-card__details--data">Даты набора:
+                    <span>15.07–19.07</span></span>
+                  <span class="tours-card__details tours-card__details--count">Группа: <span>до 22 чел.</span></span>
+                </div>
+              </div>
+
+              <div class="swiper-slide tours__swiper-slide tours-card">
+                <picture>
+                  <!--<source srcset="img/about-desk@1x.webp 1x, img/about-desk@2x.webp 2x" media="(min-width: 1336px)"
+                    width="660" height="400" type="image/webp">
+                  <source srcset="img/about-tablet@1x.webp 1x, img/about-tablet@2x.webp 2x" media="(min-width: 768px)"
+                    width="678" height="345" type="image/webp">
+                  <source srcset="img/about-mobile@1x.webp 1x, img/about-mobile@2x.webp 2x" width="320" height="280"
+                    type="image/webp"> -->
+                  <source srcset="img/tours-card-desktop-4.jpg 1x, img/tours-card-desktop-4@2x.jpg 2x" media="(min-width: 1440px)" width="380"
+                    height="416" type="image/jpg">
+                  <source srcset="img/tours-card-tablet-4.jpg 1x, img/tours-card-tablet-4@2x.jpg 2x" media="(min-width: 768px)"
+                    width="330" height="416" type="image/jpg">
+                  <img class="tours-card__image" src="img/tours-card-mobile-4.jpg" srcset="img/tours-card-mobile-4@2x.jpg 2x"
+                    width="290" height="416" alt="Фото Манарага">
+                </picture>
+                <div class="tours-card__wrapper">
+                  <span class="tours-card__info tours-card__info--location">Урал</span>
+                  <span class="tours-card__info tours-card__info--day">9 дней</span>
+                  <span class="tours-card__info tours-card__info--nigth">10 ночей</span>
+                  <h3 class="tours-card__title">Восхождение Манарага</h3>
+                  <span class="tours-card__details tours-card__details--level">Сложность</span>
+                  <span class="tours-card__details tours-card__details--data">Даты набора:
+                    <span>12.07–19.07</span></span>
+                  <span class="tours-card__details tours-card__details--count">Группа: <span>до 7 чел.</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="tours__link">Показать все туры</a>
         </div>
       </div>
     </section>

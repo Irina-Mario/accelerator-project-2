@@ -4,10 +4,12 @@
 // import 'swiper/css';
 import { showMenu } from './header-toggle';
 import { closeMenu } from './header-toggle';
-import { initSlider } from './hero-swiper';
+import { initHeroSlider } from './hero-swiper';
+import { initToursSlider } from './tours-swiper';
 
 document.addEventListener('DOMContentLoaded', () => {
   showMenu();
   closeMenu();
-  initSlider();
+  initHeroSlider();
+  initToursSlider();
 });

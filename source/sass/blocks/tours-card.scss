@@ -1,0 +1,122 @@
+.tours-card__wrapper {
+  display: grid;
+  grid-template-columns: 90px 83px 75px;
+  width: 250px;
+
+  row-gap: 15px;
+  position: absolute;
+  bottom: 30px;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+
+.tours-card__image {
+  position: relative;
+
+}
+
+.tours-card__title {
+margin: 0;
+margin-bottom: 15px;
+grid-column: 1 / 4;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+color: $white-color;
+position: relative;
+}
+
+.tours-card__title::after {
+  content: " ";
+  display: block;
+  width: 80px;
+  height: 1px;
+  background-color: $white-color;
+  opacity: 20%;
+  bottom: -15px;
+  position: absolute;
+}
+
+
+.tours-card__info {
+  align-self: center;
+}
+.tours-card__info--location {
+  display: block;
+  width: 90px;
+  height: 28px;
+  background-color: $extra;
+  padding: 8px 12px 8px 34px;
+  color: $white-color;
+  background-image: url('/__spritemap#sprite-pin-view');
+  background-position: 16px;
+  background-repeat: no-repeat;
+  background-size: 9px 12px;
+  
+}
+
+.tours-card__info--day {
+  justify-self: end;
+  background-image: url('/__spritemap#sprite-sun-view');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  width: 67px;
+  padding: 4px 0 4px 32px;
+  margin-right: 11px;
+}
+
+.tours-card__info--nigth {
+  justify-self: end;
+  background-image: url('/__spritemap#sprite-moon-view');
+  background-position: 3px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  width: 74px;
+  padding: 4px 0 4px 32px;
+}
+
+.tours-card__details {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 12px;
+  color: $white-color;
+
+}
+
+.tours-card__details:first-child {
+  margin-right: 8px;
+}
+
+.tours-card__details:last-child {
+  margin-left: 9px;
+}
+
+.tours-card__info {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  color: $white-color;
+}
+
+.tours-card__details span {
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 700;
+  margin-top: 7px;
+  display: block;
+  margin-left: 2px;
+}
+
+.tours-card__details--level {
+  max-width: 84px;
+}
+
+.tours-card__star-wrapper {
+  display: flex;
+  column-gap: 1px;
+  flex-wrap: nowrap;
+  max-width: 84px;
+  margin-top: 4px;
+}
